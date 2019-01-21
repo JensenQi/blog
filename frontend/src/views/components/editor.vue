@@ -371,10 +371,8 @@
 
     import Quill from 'quill';
     import {quillEditor} from 'vue-quill-editor';
-    import {ImageDrop} from 'quill-image-drop-module/image-drop.min'
     import ImageResize from 'quill-image-resize-module'
 
-    Quill.register('modules/imageDrop', ImageDrop);
     Quill.register('modules/imageResize', ImageResize);
 
 
@@ -401,7 +399,6 @@
                             maxStack: 50,
                             userOnly: false
                         },
-                        imageDrop: true,
                         imageResize: {
                             displayStyles: {
                                 backgroundColor: 'black',

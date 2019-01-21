@@ -45,7 +45,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                exclude: /node_modules/,
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/,
@@ -68,9 +68,19 @@ module.exports = {
             {
                 test: /\.(html|tpl)$/,
                 loader: 'html-loader'
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules(?!\/quill-image-drop-module|quill-image-resize-module)/,
+                loader: 'babel-loader',
             }
         ]
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            'window.Quill': 'quill'
+        })
+    ],
     resolve: {
         extensions: ['.js', '.vue'],
         alias: {
