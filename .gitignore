@@ -2,12 +2,9 @@
 .idea/
 .DS_Store
 frontend/node_modules/
-frontend/dist
-frontend/dist/*
 frontend/src/config/*.tmp
 frontend/src/config/env.js
 frontend/index.html
-frontend/index_prod.html
 
 backend/config.ini
 
