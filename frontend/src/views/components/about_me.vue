@@ -42,8 +42,8 @@
         </div>
 
         <div style="text-align: center">
-            <img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1544717251942&amp;di=433c78a581f3e6e883123f11c76e6034&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.ccfao.gov.cn%2Fzwgk%2Fxxgkml%2Fdtxx%2F201808%2FW020180801562481131566.jpg"
-                 style="" width="150">
+            <!--<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1544717251942&amp;di=433c78a581f3e6e883123f11c76e6034&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.ccfao.gov.cn%2Fzwgk%2Fxxgkml%2Fdtxx%2F201808%2FW020180801562481131566.jpg"-->
+                 <!--style="" width="150">-->
         </div>
     </Card>
 </template>
