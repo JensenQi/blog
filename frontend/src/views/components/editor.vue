@@ -371,7 +371,7 @@
 
     import Quill from 'quill';
     import {quillEditor} from 'vue-quill-editor';
-    import {ImageDrop} from 'quill-image-drop-module'
+    import {ImageDrop} from 'quill-image-drop-module/image-drop.min'
     import ImageResize from 'quill-image-resize-module'
 
     Quill.register('modules/imageDrop', ImageDrop);
