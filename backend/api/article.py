@@ -1,8 +1,9 @@
 from flask import Blueprint
-from flask.ext.login import login_required, current_user, AnonymousUserMixin
+from flask.ext.login import login_required, current_user
 from flask import jsonify, request, g
 from models import Article
 from datetime import datetime
+from sqlalchemy import or_
 
 article = Blueprint('article', __name__)
 
@@ -16,7 +17,8 @@ def listing_article():
     if current_user.is_anonymous:
         articles = articles.filter_by(release=True)
     if key != '':
-        articles = articles.filter(Article.content.like('%{}%'.format(key)))
+        articles = articles.filter(or_(Article.content.like('%{}%'.format(key)),
+                                       Article.title.like('%{}%'.format(key))))
     count = articles.count()
     articles = articles.order_by(Article.create_time.desc()) \
         .limit(page_size).offset((page - 1) * page_size)

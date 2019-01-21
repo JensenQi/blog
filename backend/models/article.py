@@ -5,7 +5,7 @@ from .base import BaseModel, Column, Integer, String, LONGTEXT, Boolean, DateTim
 class Article(BaseModel):
     __tablename__ = 'article'
     id = Column(Integer, primary_key=True, comment=u'文章ID')
-    title = Column(String(32), comment=u'文章标题')
+    title = Column(String(512), comment=u'文章标题')
     abstract = Column(LONGTEXT, comment=u'摘要')
     content = Column(LONGTEXT, comment=u'文章内容')
     more = Column(Boolean, default=False, comment=u'是否产生摘要')
