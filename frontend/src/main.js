@@ -7,7 +7,7 @@ import App from './app.vue';
 import 'iview/dist/styles/iview.css';
 import VueResource from 'vue-resource';
 import VueSession from 'vue-session';
-import TrimHTML from 'trim-html';
+import TrimHTML from './libs/trim_html';
 
 // require('./mock/login.js');
 
@@ -17,7 +17,7 @@ Vue.http.options.emulateJSON = true;
 Vue.use(iView);
 Vue.use(VueSession);
 
-Vue.prototype.$trim_html = TrimHTML;
+Vue.prototype.$trim_html = TrimHTML.trimHtml;
 
 
 // 路由配置

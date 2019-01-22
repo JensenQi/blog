@@ -360,8 +360,6 @@
                @on-ok="submit"
                @on-cancel="submit_modal = false">
         </Modal>
-
-        <div v-html="result"></div>
     </div>
 </template>
 

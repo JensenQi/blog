@@ -8,7 +8,7 @@
     </div>
 </template>
 <script>
-    import 'highlight.js/styles/obsidian.css';
+    import 'highlight.js/styles/atom-one-light.css'
     export default {
         data () {
             return {}

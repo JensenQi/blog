@@ -587,8 +587,8 @@ blockquote {
     padding: 2px 4px;
 }
 .ql-snow .ql-editor pre.ql-syntax {
-    background-color: #23241f;
-    color: #f8f8f2;
+    background-color: #fafafa;
+    color: #383a42;
     overflow: visible;
 }
 .ql-snow .ql-editor img {
